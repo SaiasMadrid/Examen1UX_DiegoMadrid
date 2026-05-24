@@ -1,0 +1,24 @@
+* { /* el * es para aplicar a todos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* se aplican las cosas como el color negro, la fuente de netflix 
+(que por alguna razon existe y es exclusiva de ellos, wow), etc. */
+body { 
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* la scrollbar de netflix con su rojito todo especial idk */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 10px;
+}
