@@ -1,0 +1,98 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.hero-banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent 100%
+  );
+}
+
+.hero-banner__content {
+  position: absolute;
+  bottom: 30%;
+  left: 48px;
+  max-width: 500px;
+  z-index: 10;  /* para que el contenido este por encima del fondo */
+}
+
+.hero-banner__rank {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.hero-banner__rank-badge {
+  background-color: #e50914;
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.hero-banner__rank-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.hero-banner__title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero-banner__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e5e5e5;
+  margin-bottom: 24px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.hero-banner__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-banner__fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(transparent, #141414);
+}
+
+@media (max-width: 768px) {
+  .hero-banner__content {
+    left: 24px;
+    right: 24px;
+    bottom: 20%;
+  }
+
+  .hero-banner__title {
+    font-size: 32px;
+  }
+
+  .hero-banner__description {
+    font-size: 14px;
+  }
+}

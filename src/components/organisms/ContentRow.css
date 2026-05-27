@@ -1,0 +1,39 @@
+.content-row {
+  padding: 0 48px;
+  margin-bottom: 48px;
+}
+
+.content-row__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e5e5e5;
+  margin-bottom: 12px;
+}
+
+.content-row__slider {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #e50914 #555;
+}
+
+.content-row__slider::-webkit-scrollbar {
+  height: 4px;
+}
+
+.content-row__slider::-webkit-scrollbar-thumb {
+  background-color: #e50914;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    padding: 0 24px;
+  }
+
+  .content-row__title {
+    font-size: 16px;
+  }
+}
