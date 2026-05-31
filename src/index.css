@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* se aplican las cosas como el color negro, la fuente de netflix 
+/* cosas como el color negro, la fuente de netflix, netflix sans
 (que por alguna razon existe y es exclusiva de ellos, wow), etc. */
-body { 
+body {
   background-color: #141414;
   color: #fff;
   font-family: 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -21,4 +21,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #e50914;
   border-radius: 10px;
+}
+
+.app__content {
+  position: relative;
+  margin-top: -100px;
+  z-index: 10;
 }

@@ -1,8 +1,7 @@
 import "./MovieCard.css";
 import ProgressBar from "../atoms/ProgressBar";
 
-/* recibe movie de parametro que le da toda la info 
-necesaria para mostrar la peli en la tarjeta */
+/*Recibe la info de las peliculas con progress opcional por si acaso es null*/
 function MovieCard({ movie }) {
   return (
     <div className="movie-card">
@@ -12,6 +11,7 @@ function MovieCard({ movie }) {
         className="movie-card__image"
       />
       <div className="movie-card__overlay">
+        <p className="movie-card__title">{movie.title}</p>
         {movie.progress && <ProgressBar progress={movie.progress} />}
       </div>
     </div>

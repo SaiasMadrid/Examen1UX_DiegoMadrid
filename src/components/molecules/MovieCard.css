@@ -1,7 +1,9 @@
 .movie-card {
   position: relative;
-  min-width: 200px;
-  height: 120px;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  flex-shrink: 0;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -27,4 +29,19 @@
   right: 0;
   padding: 8px;
   background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.movie-card__title {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+}
+
+.movie-card:hover .movie-card__title {
+  opacity: 1;
 }
