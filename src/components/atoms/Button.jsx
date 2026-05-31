@@ -4,7 +4,7 @@ import "./Button.css";
 
 function Button({ text, variant = "primary", onClick }) {
   return (
-    <button className={variant === "primary" ? "btn-primary" : "btn-secondary"} onClick={onClick}>
+    <button className={`btn btn--${variant}`} onClick={onClick}>
       {text}
     </button>
   );
