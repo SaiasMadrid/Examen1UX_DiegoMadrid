@@ -6,7 +6,7 @@ function HeroBanner() {
   return (
     <div
       className="hero-banner"
-      style={{ backgroundImage: `url(${featuredContent.image})` }}
+      style={{ backgroundImage: "url(" + featuredContent.image + ")" }}
       /*backgroundImage en el div en lugar de una etiqueta img porque 
       se controla mejor el tamaño y posicion con css como Dios manda*/
     >

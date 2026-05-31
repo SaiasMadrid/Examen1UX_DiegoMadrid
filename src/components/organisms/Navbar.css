@@ -77,7 +77,7 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* estilos para mini pantallas (again x3) */
   .navbar {
     padding: 16px 24px;
   }

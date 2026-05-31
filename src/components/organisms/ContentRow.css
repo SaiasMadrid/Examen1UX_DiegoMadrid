@@ -13,7 +13,7 @@
 .content-row__slider {
   display: flex;
   gap: 8px;
-  overflow-x: auto;
+  overflow-x: auto; /* desplazamiento horizontal para no desordenar la estructura */
   padding-bottom: 12px;
   scrollbar-width: thin;
   scrollbar-color: #e50914 #555;
@@ -28,7 +28,7 @@
   border-radius: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*jugar con el padding para pantallas pequeñas*/
   .content-row {
     padding: 0 24px;
   }
